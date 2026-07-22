@@ -1,0 +1,362 @@
+
+<?xml version ="1.0" encoding ="UTF-8"?>
+<definitions name="ws_integracao" targetNamespace="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://tempuri.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+    <message name="produtoAddRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="produtoAddResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>
+    <message name="produtoUpdateRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="produtoUpdateResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>   
+             
+    <message name="itemVendaUpdateRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="itemVendaUpdateResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>
+
+    <message name="departamentoAddRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="departamentoAddResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>
+    <message name="departamentoUpdateRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="departamentoUpdateResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>
+
+   
+    <message name="lojaAddRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="lojaAddResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>
+    <message name="lojaUpdateRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="lojaUpdateResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>
+
+    <message name="marcaAddRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="marcaAddResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>
+    <message name="marcaUpdateRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="marcaUpdateResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>
+
+
+    <message name="tipoAtributoAddRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="tipoAtributoAddResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>
+    <message name="tipoAtributoUpdateRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="tipoAtributoUpdateResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>
+
+    <message name="atributoAddRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="atributoAddResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>
+    <message name="atributoUpdateRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="atributoUpdateResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>
+
+
+    <message name="clienteAddRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="clienteAddResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>
+    <message name="clienteUpdateRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="clienteUpdateResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>
+    
+    <message name="alterarStatusPedidoRequest">
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="alterarStatusPedidoResponse">
+        <part name="Result" type="xsd:string"/>
+    </message>
+
+
+    <portType name="ws_integracaoPortType">
+        <operation name="produtoAdd">
+            <input message="tns:produtoAddRequest"/>
+            <output message="tns:produtoAddResponse"/>
+        </operation>
+        <operation name="produtoUpdate">
+            <input message="tns:produtoUpdateRequest"/>
+            <output message="tns:produtoUpdateResponse"/>
+        </operation>
+
+
+        <operation name="departamentoAdd">
+            <input message="tns:departamentoAddRequest"/>
+            <output message="tns:departamentoAddResponse"/>
+        </operation>
+        <operation name="departamentoUpdate">
+            <input message="tns:departamentoUpdateRequest"/>
+            <output message="tns:departamentoUpdateResponse"/>
+        </operation>
+
+        
+        <operation name="lojaAdd">
+            <input message="tns:lojaAddRequest"/>
+            <output message="tns:lojaAddResponse"/>
+        </operation>
+        <operation name="lojaUpdate">
+            <input message="tns:lojaUpdateRequest"/>
+            <output message="tns:lojaUpdateResponse"/>
+        </operation>
+        
+
+        <operation name="marcaAdd">
+            <input message="tns:marcaAddRequest"/>
+            <output message="tns:marcaAddResponse"/>
+        </operation>
+        <operation name="marcaUpdate">
+            <input message="tns:marcaUpdateRequest"/>
+            <output message="tns:marcaUpdateResponse"/>
+        </operation>
+
+        <operation name="tipoAtributoAdd">
+            <input message="tns:tipoAtributoAddRequest"/>
+            <output message="tns:tipoAtributoAddResponse"/>
+        </operation>
+        <operation name="tipoAtributoUpdate">
+            <input message="tns:tipoAtributoUpdateRequest"/>
+            <output message="tns:tipoAtributoUpdateResponse"/>
+        </operation>
+
+        <operation name="atributoAdd">
+            <input message="tns:atributoAddRequest"/>
+            <output message="tns:atributoAddResponse"/>
+        </operation>
+        <operation name="atributoUpdate">
+            <input message="tns:atributoUpdateRequest"/>
+            <output message="tns:atributoUpdateResponse"/>
+        </operation>
+
+
+        <operation name="clienteAdd">
+            <input message="tns:clienteAddRequest"/>
+            <output message="tns:clienteAddResponse"/>
+        </operation>
+        <operation name="clienteUpdate">
+            <input message="tns:clienteUpdateRequest"/>
+            <output message="tns:clienteUpdateResponse"/>
+        </operation>
+        
+        <operation name="alterarStatusPedido">
+            <input message="tns:alterarStatusPedidoRequest"/>
+            <output message="tns:alterarStatusPedidoResponse"/>
+            
+        </operation>
+        <operation name="itemVendaUpdate">
+            <input message="tns:itemVendaUpdateRequest"/>
+            <output message="tns:itemVendaUpdateResponse"/>
+        </operation>
+
+    </portType>
+
+    <binding name="ws_integracaoBinding" type="tns:ws_integracaoPortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="produtoAdd">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#produtoAdd"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+        <operation name="produtoUpdate">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#produtoUpdate"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+
+
+        <operation name="departamentoAdd">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#departamentoAdd"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+        <operation name="departamentoUpdate">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#departamentoUpdate"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+       
+        <operation name="lojaAdd">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#lojaAdd"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+        
+        <operation name="lojaUpdate">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#lojaUpdate"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+        
+
+        <operation name="marcaAdd">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#marcaAdd"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>                                                                                                                        
+        <operation name="marcaUpdate">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#marcaUpdate"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+
+
+        <operation name="atributoAdd">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#atributoAdd"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+        <operation name="atributoUpdate">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#atributoUpdate"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>                                                                                                                        
+
+
+        <operation name="tipoAtributoAdd">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#tipoAtributoAdd"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+        <operation name="tipoAtributoUpdate">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#tipoAtributoUpdate"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+
+
+        <operation name="clienteAdd">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#clienteAdd"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+        <operation name="clienteUpdate">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#clienteUpdate"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+        
+        <operation name="alterarStatusPedido">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#alterarStatusPedido"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+        
+        <operation name="itemVendaUpdate">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#itemVendaUpdate"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+
+    </binding>
+
+    <service name="ws_integracaoService">
+        <port name="ws_integracaoBinding" binding="tns:ws_integracaoBinding">
+            <soap:address location="http://farmagora.webstormseguro.com.br/webservice/serverImportacao.php"/> 
+        </port>
+    </service>
+</definitions>

@@ -1,0 +1,25 @@
+# PowerBuilder - ignora binários do sistema / build
+*.exe
+*.dll
+pborca.exe
+*.pbd
+*.zip
+Exe/
+
+# Ruído de IDE / arquivos nativos PB (não confundir com a pasta .pbg/ do CLI)
+*.usr.opt
+Bibliotecas/*.pbg
+
+# PBG - ignora temporários e staging, versiona o resto
+.pbg/temp/
+.pbg/staging/
+.pbg/backup/
+!.pbg/snapshots/
+!.pbg/manifest.json
+!.pbg/config.json
+!.pbg/libs.pbt
+!.pbg/pbg.log
+!.pbg/pbg.*.log
+
+# Logs (exceto os do pbg)
+*.log

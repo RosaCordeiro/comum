@@ -1,0 +1,121 @@
+
+<?xml version ="1.0" encoding ="UTF-8"?>
+<definitions name="ws_integracao" targetNamespace="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://tempuri.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+    <message name="clienteSelectRequest">
+        <part name="xml" type="xsd:String"/>
+    </message>
+    <message name="clienteSelectResponse">
+        <part name="Result" type="xsd:String"/>
+    </message>
+
+    <message name="pedidoSelectRequest">
+        <part name="xml" type="xsd:String"/>
+    </message>
+    <message name="pedidoSelectResponse">
+        <part name="Result" type="xsd:String"/>
+    </message>
+
+    <message name="historicoSelectRequest">
+        <part name="xml" type="xsd:String"/>
+    </message>
+    <message name="historicoSelectResponse">
+        <part name="Result" type="xsd:String"/>
+    </message>
+
+    <message name="devolucaoSelectRequest">
+        <part name="xml" type="xsd:String"/>
+    </message>
+    <message name="devolucaoSelectResponse">
+        <part name="Result" type="xsd:String"/>
+    </message>
+
+    <message name="fidelidadeSelectRequest">
+        <part name="xml" type="xsd:String"/>
+    </message>
+    <message name="fidelidadeSelectResponse">
+        <part name="Result" type="xsd:String"/>
+    </message>
+
+    <portType name="ws_integracaoPortType">
+        <operation name="clienteSelect">
+            <input message="tns:clienteSelectRequest"/>
+            <output message="tns:clienteSelectResponse"/>
+        </operation>
+    
+        <operation name="pedidoSelect">
+            <input message="tns:pedidoSelectRequest"/>
+            <output message="tns:pedidoSelectResponse"/>
+        </operation>
+    
+        <operation name="historicoSelect">
+            <input message="tns:historicoSelectRequest"/>
+            <output message="tns:historicoSelectResponse"/>
+        </operation>
+   
+        <operation name="devolucaoSelect">
+            <input message="tns:devolucaoSelectRequest"/>
+            <output message="tns:devolucaoSelectResponse"/>
+        </operation>
+
+        <operation name="fidelidadeSelect">
+            <input message="tns:fidelidadeSelectRequest"/>
+            <output message="tns:fidelidadeSelectResponse"/>
+        </operation>
+    </portType>
+
+    <binding name="ws_integracaoBinding" type="tns:ws_integracaoPortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="clienteSelect">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#clienteSelect"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+        <operation name="pedidoSelect">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#pedidoSelect"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+        <operation name="historicoSelect">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#historicoSelect"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+        <operation name="devolucaoSelect">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#devolucaoSelect"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+        <operation name="fidelidadeSelect">
+            <soap:operation soapAction="urn:xmethods-delayed-quotes#fidelidadeSelect"/>
+            <input>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:xmethods-delayed-quotes" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+    </binding>
+
+    <service name="ws_integracaoService">
+        <port name="ws_integracaoBinding" binding="tns:ws_integracaoBinding">
+            <soap:address location="http://homologa.farmagora.com.br/webservice/serverExportacao.php"/>
+        </port>
+    </service>
+</definitions>
