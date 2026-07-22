@@ -1,20 +1,59 @@
-# PowerBuilder - ignora binários do sistema / build
+# PowerBuilder - binários / build / deploy
 *.exe
 *.dll
 pborca.exe
 *.pbd
+*.pbx
 *.zip
 Exe/
+Export/
 
-# Ruído de IDE / arquivos nativos PB (não confundir com a pasta .pbg/ do CLI)
+# Pastas locais que não entram no Git
+Arquivos/
+Fonts/
+Icons/
+WSDL_*/
+**/WSDL_*/
+
+# Objetos .sr* soltos (a fonte versionada é .pbg/snapshots/)
+*.sra
+*.srw
+*.sru
+*.srd
+*.srf
+*.srm
+*.srs
+*.srj
+*.srl
+*.srn
+*.sro
+*.srq
+*.srt
+!.pbg/snapshots/
+!.pbg/snapshots/**
+
+# Em Bibliotecas/, versionar só .pbl e .pbt (sem .sr* / subpastas de lixo)
+Bibliotecas/**
+!Bibliotecas/**/
+!Bibliotecas/**/*.pbl
+!Bibliotecas/**/*.pbt
+
+# PBL/PBG na raiz do repositório (devem ficar em Bibliotecas/)
+/*.pbl
+/*.pbg
+*.pbg
+
+# Ruído de IDE / Windows
 *.usr.opt
-Bibliotecas/*.pbg
+Thumbs.db
+Desktop.ini
 
 # PBG - ignora temporários e staging, versiona o resto
 .pbg/temp/
 .pbg/staging/
 .pbg/backup/
 !.pbg/snapshots/
+!.pbg/snapshots/**
 !.pbg/manifest.json
 !.pbg/config.json
 !.pbg/libs.pbt
